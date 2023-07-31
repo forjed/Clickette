@@ -1,5 +1,9 @@
 function checkForBangs(bangQuery) {
     const bangsMap = [
+      ["+%21r", "https://www.resulti.net/search?q="],
+      ["+!r", "https://www.resulti.net/search?q="], 
+      ["+r%21", "https://resulti.net/search?q="],
+      ["+r!", "https://resulti.net/search?q="],
       ["+g%21", "https://www.google.com/search?q="],
       ["+g!", "https://www.google.com/search?q="],
       ["+%21g", "https://www.google.com/search?q="],
