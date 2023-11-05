@@ -60,29 +60,3 @@ function enableMobileLayout() {
         $el.css({'position': 'static', 'top': '0px'}); 
       } 
     });
-var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
-if (isMac) {
-function setCookie(cname,cvalue) {
-  document.cookie = cname + "=" + cvalue;
-}
-  if (isMac) {
-document.location.replace('https://a.clickette.net/');
-     }
-  }
-  function iOS() {
-    return [
-      'iPad Simulator',
-      'iPhone Simulator',
-      'iPod Simulator',
-      'iPad',
-      'iPhone',
-      'iPod'
-    ].includes(navigator.platform)
-    // iPad on iOS 13 detection
-    || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
-  }
-  if (iOS() == true) {
-    document.location.replace('https://a.clickette.net/');
-  } else {
-    console.log('Not on iOS');
-  }
